@@ -59,3 +59,13 @@ $ git commit -m "remove test.txt"
 
 16.丢弃工作区的修改，返回仓库里的版本
 $ git checkout -- xxx.txt
+
+17.创建SSH Key：
+$ ssh-keygen -t rsa -C "1017465064@qq.com"
+
+18.连接GitHub远程仓库
+$ git remote add origin git@github.com:JohnZize/learngit.git
+
+19.推送本地仓库到GitHub
+$ git push -u origin master(第一次推送)
+$ git push origin master
