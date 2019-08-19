@@ -33,7 +33,7 @@ $ git log --pretty=oneline
 (HEAD表示当前版本)
 $ git reflog
 
-9.返回上个版本(上一个版本：HEAD^ 上上一个版本：HEAD^^ 上100个版本：HEAD~100)
+9.返回上个版本(上一个版本：HEAD^；上上一个版本：HEAD^^；上100个版本：HEAD~100)
 $ git reset --hard HEAD^
 
 10.查看文件内容
@@ -41,3 +41,16 @@ $ cat xxx.txt
 
 11.转到版本
 $ git reset --hard xxxx
+
+12.查看工作区和版本库里面最新版本的区别：
+$ git diff HEAD -- readme.txt 
+
+13.撤销一次操作：
+	1.还没装车：工作区->仓库里文件的亚子；
+	2.装车了还没进仓库：工作区->车上文件的亚子
+$ git checkout -- readme.txt
+
+14.把车上的文件返回工作区
+git reset HEAD <file>
+
+15.大大大大
