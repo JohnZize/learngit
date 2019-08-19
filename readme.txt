@@ -21,7 +21,7 @@ $ git add xxx.txt
 5.把运文件的车提交到仓库：
 $ git commit -m "提交说明"
 
-6.运行看结果：
+6.运行看结果：(工作区是否有修改没装车，车是否进仓库)
 $ git status
 
 7.查看修改记录：
@@ -50,7 +50,12 @@ $ git diff HEAD -- readme.txt
 	2.装车了还没进仓库：工作区->车上文件的亚子
 $ git checkout -- readme.txt
 
-14.把车上的文件返回工作区
+14.把车上的文件返回工作区：
 git reset HEAD <file>
 
-15.大大大大
+15.删仓库文件，保存修改
+$ git rm test.txt
+$ git commit -m "remove test.txt"
+
+16.丢弃工作区的修改，返回仓库里的版本
+$ git checkout -- xxx.txt
