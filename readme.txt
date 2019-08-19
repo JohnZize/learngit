@@ -31,4 +31,3 @@ $ git diff xxx.txt
 $ git log
 $ git log --pretty=oneline
 
-9.
