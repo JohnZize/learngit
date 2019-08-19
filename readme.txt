@@ -27,3 +27,8 @@ $ git status
 7.查看修改记录：
 $ git diff xxx.txt 
 
+8.显示提交日志
+$ git log
+$ git log --pretty=oneline
+
+9.
